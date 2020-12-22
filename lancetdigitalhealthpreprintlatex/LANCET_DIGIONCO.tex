@@ -45,6 +45,7 @@
 
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
+\usepackage{lipsum}
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
 
@@ -181,20 +182,19 @@ The predominant issue in reproducing and comparing results across multiple studi
 In this paper, we present DigiOnco, a novel pipeline, intricately woven with carefully chosen set of algorithms. DigiOnco unveils the digital non-invasive biomarkers from multi-parameteric Radiomics footprints obtained from the PET/CT imaging techniques. The hypothesis generation and validation is performed as both internal cross-validation as well as a retrospectively validated study on an independent cohort, having a set of external and independent group of patients.
 
 
-\section{DigiOnco: Radiomics Pipeline}
-DigiOnco based imaging analytics in cancer care holds immense potential to unlock valuable clinical insights from an abundance of patient imaging records, aided by sophisticated modeling, which will lead to deeper personalization of cancer treatment and in-turn improved outcomes. With the huge deluge in imaging data, it becomes increasingly hard to translate all these data into knowledge and subsequently leverage that knowledge to guide clinical decisions. The oncologist is overwhelmed with scientific literature, swiftly evolving treatment techniques and the exponentially increasing amount of clinical data. To provide high-quality individualized treatments, oncologists need help translating all these data into knowledge that supports decision-making in routine clinical practice by developing biomarkers (blood ,tissue, imaging etc.) to predict and prognosticate cancer treatment strategies.
-Breast cancer is high in intratumoral heterogeneity, with obvious differences in responses of different molecular subtypes to surgery, radiation or chemo-hormonal treatments. Therefore, recognizing imaging markers directly to distinguish molecular subtypes without invasive biopsies would help in guiding treatment plans for breast cancers. DigiOnco will effectively improve sensitivity and specificity of breast cancer diagnosis from PET-CT imaging phenotypes, with the help of quantitative imaging characterization. This method can support comprehensive evaluation of heterogeneity of the lesions and predict the prognosis in advance. DigiOnco based radiomic  analysis of  biological characteristics  can effectively differentiate different subtypes of breast cancer with good accuracy and this approach could serve as a more convenient and non-invasive biomarker for the prediction of breast cancer subtypes. The pipeline developed for this project has been depicted in Figure $\ref{img1}$. The remainder of the section descibes each individual step in detail.
+\section{Methods}
+DigiOnco based imaging analytics in cancer care holds immense potential to unlock valuable clinical insights from an abundance of patient imaging records, aided by sophisticated modeling, which will lead to deeper personalization of cancer treatment and in-turn improved outcomes. With the huge deluge in imaging data, it becomes increasingly hard to translate all these data into knowledge and subsequently leverage that knowledge to guide clinical decisions. The oncologist is overwhelmed with scientific literature, swiftly evolving treatment techniques and the exponentially increasing amount of clinical data. To provide high-quality individualized treatments, oncologists need help translating all these data into knowledge that supports decision-making in routine clinical practice by developing biomarkers (blood, tissue, imaging etc) to predict and prognosticate cancer treatment strategies. Breast cancer is high in intratumoral heterogeneity, with obvious differences in responses of different molecular subtypes to surgery, radiation or chemo-hormonal treatments. Therefore, recognizing imaging markers directly to distinguish molecular subtypes without invasive biopsies would help in guiding treatment plans for breast cancers. DigiOnco will effectively improve sensitivity and specificity of breast cancer diagnosis from PET-CT imaging phenotypes, with the help of quantitative imaging characterization. This method can support comprehensive evaluation of heterogeneity of the lesions and predict the prognosis in advance. DigiOnco based radiomic  analysis of  biological characteristics  can effectively differentiate different subtypes of breast cancer with good accuracy and this approach could serve as a more convenient and non-invasive biomarker for the prediction of breast cancer subtypes. The pipeline developed for this project has been depicted in Figure $\ref{img1}$. 
 
-\begin{figure*}[!b]
+\begin{figure*}[!t]
 \centering
-\includegraphics[width=6in]{img1.png}
+\includegraphics[width=4in]{flowchart.png}
 \caption{Project Pipeline}
 \label{img1}
 \end{figure*}
 
 \subsection{Obtaining Raw data}
 
-In order to obtain distinct yet comparable subjects, a cohort dataset of 89 patients was selected in this study. The dataset consisted of four intrinsic molecular subtypes of breast cancer which are contrasted on the genes a cancerous cell expresses. The dataset has been descibed in Table $\ref{tb1}$.
+In order to obtain distinct yet comparable subjects, an Indian breast cancer cohort with multiple molecular subtypes of 89 patients was selected in this study. The dataset consisted of four intrinsic molecular subtypes of breast cancer which are contrasted on the genes a cancerous cell expresses. The dataset has been descibed in Table $\ref{tb1}$.
 
 \begin{table*}[!b]
 \scriptsize
@@ -213,7 +213,7 @@ HER & 5 & - & - & + & [30,50]\\
 \end{tabular}
 \end{table*}
 
-For each of the patient, a CT scan was conducted to obtain cross-sectional images of the hypothesised tumor location. CT scans provide a more detailed description of the patients condition by increasing the radiation level the patient is exposed to. Once the scan is completed three views are obtained namely, Axial, Sagittal and Coronal. DICOM (Digital Imaging and Communication in Medicine) images were obtained after the scan. For each patient 323 new studies were conducted with each study have 384 series which corresponded to 466 instances or images of the scan. Even though DICOM files are a standard format for medical imaging, NRRD (Nearly Raw Raster Data) files are anonymmized and contain no sensitive patient information. Moreover NRRD store the entire information in a single file as opposed to DICOM imaging.
+For each of the patient, a CT scan was conducted to obtain cross-sectional images of the hypothesised tumor location. CT scans provide a more detailed description of the patients condition by increasing the radiation level the patient is exposed to. Once the scan is completed three views are obtained namely, Axial, Sagittal and Coronal. DICOM (Digital Imaging and Communication in Medicine) images were obtained after the scan. For each patient 323 new studies were conducted with each study have 384 series which corresponded to 466 instances or images of the scan. Even though DICOM files are a standard format for medical imaging, NRRD (Nearly Raw Raster Data) files are anonymmized and contain no sensitive patient information in a more compact scheme. 
 
 % \begin{figure*}[!b]
 % \centering
@@ -225,7 +225,7 @@ For each of the patient, a CT scan was conducted to obtain cross-sectional image
 
 \begin{figure*}[!b]
 \centering
-\includegraphics[width=6.5in]{im.png}
+\includegraphics[width=5.4in]{im.png}
 \caption{Data-Flow}
 \label{img2}
 \end{figure*}
@@ -243,13 +243,13 @@ def rast(x, y, shape):
         return nrrd
 \end{verbatim}
 
-Once this step is conducted, our image is in a compressed format, rife with information. Information extraction can be conducted through multiple means such as using neural networks, OCR recognition or pattern recognition algorithms. 
+% Once this step is conducted, our image is in a compressed format, rife with information. Information extraction can be conducted through multiple means such as using neural networks, OCR recognition or pattern recognition algorithms. 
 
 \subsection{Obtaining Radiomics Features}
 
-Information extraction from images directly has certain drawbacks. For eg, consider tumor classification using a standard Convolutional Neural Network (CNN). The CNN might be extremely successful in determining the existense of a blob of mass and it's exact location. However diagnosing the exact nature and feature set of the tumor is extremely difficult for a CNN. This is because a CNN views the image as simply a collection of pixels without any regard to the information embedded in all the views of the data. 
+Information extraction from images directly has certain drawbacks. For eg, consider tumor classification using a standard Convolutional Neural Network (CNN). The CNN might be extremely successful in determining the existense of a blob of mass and it's exact location. However diagnosing the exact nature and feature set of the tumor is extremely difficult for a CNN as it views the image as simply a collection of pixels without any regard to the information embedded in the image.
 
-To tackle this issue, we have utilized radiomics algorithms to extract feature sets from the medical images to reveal characteristics which are not captured by trained networks. The open-source Python library, PyRadiomics was used to mine out the required feature set. Before the actual extraction could be performed, a set of filters were applied on the NRRD to provide a comprehensive view of the data. The filters applied are listed in table $\ref{tb2}$. 
+To tackle this issue, we have utilized radiomics based algorithms to extract feature sets from the medical images to reveal hidden characteristics. The open-source Python library, PyRadiomics was used to mine out the required feature set. Before the actual extraction could be performed, a set of filters were applied on the NRRD to provide a comprehensive view of the data. The filters applied are listed in table $\ref{tb2}$. 
 
 \begin{table}[!b]
 \scriptsize
@@ -495,6 +495,7 @@ CE10 & RUSBoost with SVM & Ensemble & Classification (S)\\
 \caption{Performance Analysis}
 \label{table:t1}
 \centering
+\scalebox{0.95}
 {
 \begin{tabular}{| l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l |}
 \hline
@@ -506,7 +507,7 @@ CE10 & RUSBoost with SVM & Ensemble & Classification (S)\\
 \hline
 &&&&&&&&&\\
 \hline
-\textbf{Model} & {CE3} & {CE4} & {CE5} & {CE6} & {CE7} & {CE8} & {CE9} & {CE10} & \textbf{SFORCE (SR) with K-Fold cross validation} \\
+\textbf{Model} & {CE3} & {CE4} & {CE5} & {CE6} & {CE7} & {CE8} & {CE9} & {CE10} & \textbf{SFORCE} \\
 \hline
 \textbf{Accuracy Reading}& 1.0000 & 1.0000 & 0.9870 & 0.9896 & 1.0000 & 0.9977 & 0.9920 & 0.9977 & \textbf{0.9974} \\
 \hline
@@ -705,6 +706,10 @@ To obtain digital bio-markers, two cases studies were conducted from the avaiabl
 \end{algorithmic}
 \end{algorithm}
 
+\subsection{Role of source funding}
+
+The funders had no role in study design, data interpretation, writing of the manuscript, and decision to submit. All the authors had full access to all the data used in the study and had final responsibility for the decision to submit for publication.
+
 \section{Results and Conclusion}
 
 From the data-driven pipeline, quantifiable digital biomarkers were obtained in the form of box and whisker plots. These plots provide a convinient method of displaying the data distribution and provide insight to the oncological expert during prognosis of future test subjects. Sample box plots have been displayed in Figures $\ref{fig:sfig1}$ to $\ref{fig:sfig4}$. The entire list of digital biomarkers along with their corresponding box plots have been included in the supplementary material. Note that the number of digital biomarkers correspond to the number of the box plots which in turn corresponds to number of features selected. 
@@ -746,48 +751,100 @@ However it must also be duely noted that this pipeline is quite delicate when it
 % \end{figure}
 % 
 
-\begin{figure}
-\begin{subfigure}{}
-  \centering
-  \includegraphics[width=8cm]{bg1.png}
-  \caption{}
-  \label{fig:sfig1}
-\end{subfigure}%
-\begin{subfigure}{}
-  \centering
-  \includegraphics[width=8cm]{bg2.png}
-  \caption{}
-  \label{fig:sfig2}
-\end{subfigure}
-\begin{subfigure}{}
-  \centering
-  \includegraphics[width=8cm]{tg1.png}
-  \caption{}
-  \label{fig:sfig3}
-\end{subfigure}%
-\begin{subfigure}{}
-  \centering
-  \includegraphics[width=8cm]{tg2.png}
-  \caption{}
-  \label{fig:sfig4}
-\end{subfigure}
-% \caption{plots of....}
-% \label{fig:fig}
-\end{figure}
+% \begin{figure}
+% \begin{subfigure}{}
+%   \centering
+%   \includegraphics[width=8cm]{bg1.png}
+%   \caption{}
+%   \label{fig:sfig1}
+% \end{subfigure}%
+% \begin{subfigure}{}
+%   \centering
+%   \includegraphics[width=8cm]{bg2.png}
+%   \caption{}
+%   \label{fig:sfig2}
+% \end{subfigure}
+% \begin{subfigure}{}
+%   \centering
+%   \includegraphics[width=8cm]{tg1.png}
+%   \caption{}
+%   \label{fig:sfig3}
+% \end{subfigure}%
+% \begin{subfigure}{}
+%   \centering
+%   \includegraphics[width=8cm]{tg2.png}
+%   \caption{}
+%   \label{fig:sfig4}
+% \end{subfigure}
+% % \caption{plots of....}
+% % \label{fig:fig}
+% \end{figure}
+
+
 
 \begin{figure}
-\centering
-\includegraphics[width=3in]{acc1.png}
-\caption{TN vs Non-TN Classification Accuracies}
-\label{img5}
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{bg1.png} % first figure itself
+        \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{bg2.png} % second figure itself
+        \caption{second figure}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{tg1.png} % first figure itself
+        \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{tg2.png} % second figure itself
+        \caption{second figure}
+    \end{minipage}
 \end{figure}
 
+
+% 
+% \begin{figure}
+% \centering
+% \includegraphics[width=3in]{acc1.png}
+% \caption{TN vs Non-TN Classification Accuracies}
+% \label{img5}
+% \end{figure}
+% 
+% \begin{figure}
+% \centering
+% \includegraphics[width=3in]{acc2.png}
+% \caption{TN vs Luminal-A vs HER Classification Accuracies}
+% \label{img6}
+% \end{figure}
+
+
+
 \begin{figure}
-\centering
-\includegraphics[width=3in]{acc2.png}
-\caption{TN vs Luminal-A vs HER Classification Accuracies}
-\label{img6}
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{acc1.png} % first figure itself
+        \caption{first figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{acc2.png} % second figure itself
+        \caption{second figure}
+    \end{minipage}
 \end{figure}
+
+
+\subsection{Contributors}
+
+Consortium-HCG served as a medical partner and provided the data. BMS College acted as a technical partner which analysed the data and obtained the results. All authors contributed to the writing of the final version of the Article.
+
+\subsection{Declaration of interests}
+We declare no competing interests.
 
 
 %% The Appendices part is started with the command \appendix;
