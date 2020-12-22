@@ -1,0 +1,833 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+% \documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+% \documentclass[final,1p,times]{elsarticle}
+\documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\usepackage{amsmath}% http://ctan.org/pkg/amsmath
+\newcommand\sufr[3][0pt]{$\rule{0pt}{\dimexpr#1+1.4ex\relax}^\frac{#2}{#3}$}
+
+
+\usepackage{graphicx}
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+\usepackage{subfigure}
+\usepackage{stfloats}
+
+
+\journal{Lancet Digital Health}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{DigiOnco: A Pipeline to Unveil Digital Non-Invasive Biomarkers from Multi-parametric Radiomics Footprints}
+
+%% use optional labels to link authors explicitly to addresses:
+% \author[label1,label2]{<author name>}
+%  \address[label1]{<address>}
+%  \address[label2]{<address>}
+
+\author[label1]{Santhi Natarajan, Anand Ravishankar, Bharathi Malakreddy A}
+\author[label2]{G.Lohith, Kritika Sekar, Shivakumar Swamy, Kumar Kallur, Basavalinga Ajai Kumar, Mahesh Bandimegal, Krithika Murugan}
+\address[label1]{BMS Institute of Technology and Management, Visweswaraiah Technological Univesity, Bangalore, India}
+\address[label2]{Health Care Global Hospitals, Bangalore, India}
+
+\begin{abstract}
+%% Text of abstract
+Background: Digital Imaging and Analytical Models (DIAMs) assisted Radiomics has emerged as a promising tool towards offering personalized therapeutics to patients. Oncological researchers seem to have benefited the most from the automated and reproducible analytics that DIAMs offer. However, statistical deductions and associations of inferences from DIAMs have to be cross-validated with a higher rate of concordance and robustness. With the amount of digital healthcare data amounting to 2314 Exabytes as on date, there is a dire need for standardization of DIAMs applied to cohort based study with heterogeneous patient centric parameters, including age, phenotypes and genotypes. 
+
+Methods: DigiOnco, a novel pipeline, intricately woven with carefully chosen set of Machine Learning (ML) algorithms. DigiOnco unveils the digital non-invasive biomarkers from multi-parameteric Radiomics footprints obtained from the PET/CT imaging techniques. The hypothesis generation and validation is performed as both internal cross-validation as well as a retrospectively validated study on an independent cohort, having a set of external and independent group of patients.
+
+Findings: The DigiOnco a pipeline consists of multidisciplinary stages with involvement of both Radiomics and modern statistics. While Radiomics provides a real-world application based avenue, statistical tools were used to narrow down our biomarker search process. offers accuracy levels ranging from 72.7\% to 93.25\%. The hypothesis generation and validation of derived digital biomarkers are done both as internal cross validation as well as a retrospectively validated study on an independent cohort. 
+
+Interpretation: Considering the integration of our current findings with follow-up studies branching into other medical sub-doamins, the potential of homogenizing Machine Learning with data intensive fields is huge. The aim of condensing the number of features is to preserve the features with the highest level information embedded in them. However it must also be duely noted that this pipeline is quite delicate when it comes to producing results as the errors encountered in each step are rippled onto the next stages. Furthermore an increased sample dataset size could help further fine tune the model. Additional Deep Learning frameworks can also be introduced to provide competition to the incumbent design model.
+
+Funding: Vision Group of Science and Technology, Government of Karnataka, India
+\end{abstract}
+\begin{keyword}
+Non-invasive biomarkers \sep Radiomics \sep PET/CT imaging \sep Machine Learning
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+% \linenumbers
+
+%% main text
+\section{Introduction}
+\label{S:1}
+
+\subsection{Personalized Therapeutics: An oveview}
+
+Personalized medicine, diagnostics and therapeutics upholds the promise of accurate decision making by leveraging the power of machine learning/deep learning based Digitized Imaging and Anlytical Models (DIAM). An unprecendented paradigm shift is trending in the ease with which the medical fraternity embraces DIAMs. Promising collaborations have strengthened interactions among medical specialists and technological research groups, resulting in automated and reproducible analytics, more specific in the area of oncological research. The higher levels of concordance, ability to deduce image patterns not visible to the trained human eye, along with reduced intra and interobserver variations and subjectivity, have emerged as promising catalysts for embracing DIAMs.
+
+
+\subsection{Tumor Heterogenity in Onological Research: The Real Challenge for DIAM}
+
+Tumor heterogenity, involving a wide range of morphological phenotypes and prognostic variables, has been a great challenge in oncological diagnostics and prognosis. For example, in the much studied vertical of breast carcinoma, therapeutic decision making involves multi-modal analytics, including characterizing the morphology and grading a tumor, histopathology, immunohistochenomistry (IHC) and insitu hybridization (ISH). The biomarkers thus obtained, are evaluated clinically and analytically for their optimal clinical application. The profiling is further guided by the higher rate of concordance and robustness. With the multiparametric molecular assays being very expensive, approximate mutigene testing and surrogate definitions of intrinsic subtypes can be arrived at using IHC measurments.
+
+\subsection{Radiomics Assisted Digitization: An aid for Oncological Decision Making admist heteroginity}
+
+With the wide-spread know how of computed tomography (CT), positron emission tomography (PET), and magnetic resonance imaging (MRI) imaging methods, Radiomics gathered much attention in the last few years of oncological research. Radiomics pipelines study the quantitative features of the image under consideration, by extracting the first-order, second-order and higher order statistical features of the Region of Interest (ROI). The hypothesis states that when a simultaneous study of heterogenous groups of parameters of a single lesion is performed, a filtered, appropriate and customized subset of parameters (called digital biomarkers) across groups might emerge. These digital biomarkers which define specific indicative tissue characteristics, when combined with the clinical biomarkers, have the long-standing potential to offer personalized therapeutics to the patient.
+
+\subsection{DIAM for Oncology: State-of-the-Art}
+The stability and reproducability of the existing Radiomics model, along with a need to standardize the assessment of digital biomarkers and cross-validation techniques, are indeed a matter that needs immediate attention before including them in the diagnostic routine. Moreover, statistical associations are, to a greater extent, confounded by the patient centric parameters like age, sex, habits, phenotypes and genotypes, that can have a profound impact on the model performance. Existing Radiomics models, as presented in Table are predominantly applied to MRI imaging, due to it's monochrome image quality and wide availability of literature in terms of statistical image analytics.
+
+The predominant issue in reproducing and comparing results across multiple studies stems from the challenge of having enriched data. Having a common data gathering point can provide an extensive and accurate comparison of different studies conducted till date. This need-of-the-hour problem needs to dealt with a collaborative approach. As per a 2020 Stanford study, the amount of healthcare data including the Radiomics and Radiogenomics analytics data is growing at a steady rate of 48\% which indicates the oppertuninty for collaboration. s
+
+\subsection{DigiOnco: A Pipeline to Unveil Digital Non-Invasive Biomarkers from PET/CT scans}
+
+In this paper, we present DigiOnco, a novel pipeline, intricately woven with carefully chosen set of algorithms. DigiOnco unveils the digital non-invasive biomarkers from multi-parameteric Radiomics footprints obtained from the PET/CT imaging techniques. The hypothesis generation and validation is performed as both internal cross-validation as well as a retrospectively validated study on an independent cohort, having a set of external and independent group of patients.
+
+
+\section{DigiOnco: Radiomics Pipeline}
+DigiOnco based imaging analytics in cancer care holds immense potential to unlock valuable clinical insights from an abundance of patient imaging records, aided by sophisticated modeling, which will lead to deeper personalization of cancer treatment and in-turn improved outcomes. With the huge deluge in imaging data, it becomes increasingly hard to translate all these data into knowledge and subsequently leverage that knowledge to guide clinical decisions. The oncologist is overwhelmed with scientific literature, swiftly evolving treatment techniques and the exponentially increasing amount of clinical data. To provide high-quality individualized treatments, oncologists need help translating all these data into knowledge that supports decision-making in routine clinical practice by developing biomarkers (blood ,tissue, imaging etc.) to predict and prognosticate cancer treatment strategies.
+Breast cancer is high in intratumoral heterogeneity, with obvious differences in responses of different molecular subtypes to surgery, radiation or chemo-hormonal treatments. Therefore, recognizing imaging markers directly to distinguish molecular subtypes without invasive biopsies would help in guiding treatment plans for breast cancers. DigiOnco will effectively improve sensitivity and specificity of breast cancer diagnosis from PET-CT imaging phenotypes, with the help of quantitative imaging characterization. This method can support comprehensive evaluation of heterogeneity of the lesions and predict the prognosis in advance. DigiOnco based radiomic  analysis of  biological characteristics  can effectively differentiate different subtypes of breast cancer with good accuracy and this approach could serve as a more convenient and non-invasive biomarker for the prediction of breast cancer subtypes. The pipeline developed for this project has been depicted in Figure $\ref{img1}$. The remainder of the section descibes each individual step in detail.
+
+\begin{figure*}[!b]
+\centering
+\includegraphics[width=6in]{img1.png}
+\caption{Project Pipeline}
+\label{img1}
+\end{figure*}
+
+\subsection{Obtaining Raw data}
+
+In order to obtain distinct yet comparable subjects, a cohort dataset of 89 patients was selected in this study. The dataset consisted of four intrinsic molecular subtypes of breast cancer which are contrasted on the genes a cancerous cell expresses. The dataset has been descibed in Table $\ref{tb1}$.
+
+\begin{table*}[!b]
+\scriptsize
+\centering
+\caption{Data Description}
+\label{tb1}
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\textbf{Subtype} & \textbf{Number of paitents} & \textbf{Estrogen Receptor} & \textbf{Progesterone Receptor} & \textbf{HER2} & \textbf{KI67 range}\\
+\hline
+Luminal A & 29 & + & +/- & - & [5,20] \\
+Luminal B & 36 & + & +/- & +/- & [25,80] \\
+Triple Negative(TN) & 19 & - & - & - & [20,90] \\
+HER & 5 & - & - & + & [30,50]\\
+\hline
+\end{tabular}
+\end{table*}
+
+For each of the patient, a CT scan was conducted to obtain cross-sectional images of the hypothesised tumor location. CT scans provide a more detailed description of the patients condition by increasing the radiation level the patient is exposed to. Once the scan is completed three views are obtained namely, Axial, Sagittal and Coronal. DICOM (Digital Imaging and Communication in Medicine) images were obtained after the scan. For each patient 323 new studies were conducted with each study have 384 series which corresponded to 466 instances or images of the scan. Even though DICOM files are a standard format for medical imaging, NRRD (Nearly Raw Raster Data) files are anonymmized and contain no sensitive patient information. Moreover NRRD store the entire information in a single file as opposed to DICOM imaging.
+
+% \begin{figure*}[!b]
+% \centering
+% \includegraphics[width=4in]{img2.png}
+% \caption{Axial view with the tumor}
+% \label{img2}
+% \end{figure*}
+
+
+\begin{figure*}[!b]
+\centering
+\includegraphics[width=6.5in]{im.png}
+\caption{Data-Flow}
+\label{img2}
+\end{figure*}
+
+\subsection{Convert to a suitable format}
+
+As mentioned previously, NRRD provides a more insightful appraoch to understanding medical imaging and recognizing inherent patterns in a concised format. The conversion was done with the help of the Plastimatch tool which is an open source software for image computation. Plastimatch takes the DICOM image which is described in a polyline vectorized format, and converts it into a series of pixels which is more prominently known as rasterization. The subroutine for rasterization of a DICOM image set with coordiantes $x$ and $y$ is shown below.
+
+\begin{verbatim}
+def rast(x, y, shape):
+        nx, ny = draw.polygon(x, y, shape)
+        nrrd = np.zeros(shape, dtype=np.bool)
+        nrrd[ny, nx] = True 
+
+        return nrrd
+\end{verbatim}
+
+Once this step is conducted, our image is in a compressed format, rife with information. Information extraction can be conducted through multiple means such as using neural networks, OCR recognition or pattern recognition algorithms. 
+
+\subsection{Obtaining Radiomics Features}
+
+Information extraction from images directly has certain drawbacks. For eg, consider tumor classification using a standard Convolutional Neural Network (CNN). The CNN might be extremely successful in determining the existense of a blob of mass and it's exact location. However diagnosing the exact nature and feature set of the tumor is extremely difficult for a CNN. This is because a CNN views the image as simply a collection of pixels without any regard to the information embedded in all the views of the data. 
+
+To tackle this issue, we have utilized radiomics algorithms to extract feature sets from the medical images to reveal characteristics which are not captured by trained networks. The open-source Python library, PyRadiomics was used to mine out the required feature set. Before the actual extraction could be performed, a set of filters were applied on the NRRD to provide a comprehensive view of the data. The filters applied are listed in table $\ref{tb2}$. 
+
+\begin{table}[!b]
+\scriptsize
+\centering
+\caption{Applied Filters}
+\label{tb2}
+\begin{tabular}{| l | l | l |}
+\hline
+\textbf{Filter} & \textbf{Description} & \textbf{Equation}\\
+\hline
+Wavelet & Selective emphasizing  & -\\
+&de-emphasizing of image&\\
+\hline
+Square & Square the image intensities & x := (cx)\textsuperscript{2}\\
+\hline
+Square Root & Compute root of image intensities & x := $\sqrt{cx}$\\
+\hline
+Laplacian of & Applies a Laplacian of Gaussian & $\frac{1}{(\sigma\sqrt{2\pi})\textsuperscript{3}}e\textsuperscript{-\sufr{x\textsuperscript{2}+y\textsuperscript{2}+z\textsuperscript{2}}{2\sigma\textsuperscript{2}}}$\\
+Gaussian &fliter for a $\sigma$ value&\\
+\hline
+Logarithm & Computes the natural logarithm& c$\log(x+1)$\\
+& of image intensities &\\
+\hline
+Exponential & Computes the exponential of & $e\textsuperscript{cx}$\\
+&the original image &\\
+\hline
+Gradient & Computes the gradient of the image & -\\
+\hline
+\end{tabular}
+\end{table}
+
+PyRadiomics obtains radiomics features from the CT scan results in a stagewise manner. Initially the images are loaded into the platform by using SimpleITK which supports a gamut of image types along wit basic image processing techniques. In the next step, the filters descibed in $\ref{tb2}$ are applied using SimpleITK, PyWavelets, and Numpy. Finally, statistical and texture classes are used for feature extraction. The features so obtained, are stored in a dictionary format which suitable labels. 
+
+To define a Region of Interest (ROI) and to check the dimensional constrainsts of the data, a mask file is utilized. The mask file contains the tumor's location demarcated by a radiologist. The features extracted are descibed by the Imaging Biomarker Standardization Initiative (IBSI) and have have been shown in tables $\ref{tb3}$ and $\ref{tb4}$.
+% The mask image corresponding to Figure $\ref{img2}$ is shown in Figure $\ref{img3}$. Note the red mark demarcating the tumor is done by a radiologist as is standard procedure. The features are now extracted from the image set with the help of the mask file. 
+
+% \begin{figure*}[!b]
+% \centering
+% \includegraphics[width=4in]{img3.png}
+% \caption{Mask image}
+% \label{img3}
+% \end{figure*}
+
+\begin{table}[!b]
+\scriptsize
+\centering
+\caption{Features-I}
+\label{tb3}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Feature} & \textbf{Feature} & \textbf{Feature} & \textbf{Feature}\\
+\textbf{Class}&&\textbf{Class}&\\
+\hline
+& &&Autocorrelation\\
+&&&Cluster\_Prominence\\
+&&&Cluster\_Shade\\
+&&&Cluster\_Tendency\\
+&Max\_2D\_Diameter\_C&&Constrast\\
+&Max\_2D\_Diameter\_R&&Correlation\\
+&Max\_2D\_Diameter\_S&&Difference\_Average\\
+&Max\_3D\_Diameter&&Difference\_Entropy\\
+&Mesh\_Volume&&Difference\_Variance\\
+Shape&Minor\_Axis\_Length&&Inverse\_Variance\\
+&Sphercity&&Joint\_Average\\
+&Surface\_Area&Grey&Joint\_Energy\\
+&Surface\_Volume&Level&Joint\_Entropy\\
+&Voxel\_Volume&Co-occurance&MCC\\
+&Elongation &Matrix&Maximum\_Probability\\
+&Flatness&&Sum\_Average\\
+&Least\_Axis\_length&&Sum\_Entropy\\
+&Major\_Axis\_Length&&Sum\_Squares\\
+&&&Id\\
+&&&Idm\\
+&&&Idn\\
+&&&Idmn\\
+&&&Imc1\\
+&&&Imc2\\
+\hline
+&10 Percentile&&\\
+&90 Percentile&&Normalized\_Uniformity\\
+&Energy&&Variance\\
+&Entropy&&High\_Run\_Emphasis\\
+&Interquartile\_Range&&Long\_Run\_Emphasis\\
+&Kurtosis&&Long\_High\_Run\_Emphasis\\
+&Maximum&&Long\_Low\_Run\_Emphasis\\
+First &Mean\_Absolute\_Deviation&&Low\_Run\_Emphasis\\
+Order&Mean&Grey&Run\_Entropy\\
+Statistics&Median& Level&Run\_Uniformity\\
+&Minimum& Run &Normalized\_Uniformity\\
+&Range&Length &Run\_Percentage\\
+&Robust\_Mean\_Deviation&Matrix&Run\_Variance\\
+&Robust\_Mean\_Squared&&Short\_Run\_Emphasis\\
+&Skewness&&Short\_Run\_High\_Emphasis\\
+&Total\_Energy&&Short\_Run\_Low\_Emphasis\\
+&Uniformity&&Uniformity\\
+&Variance&&\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!b]
+\scriptsize
+\centering
+\caption{Features-II}
+\label{tb4}
+\begin{tabular}{| l | l |}
+\hline
+\textbf{Feature Class} & \textbf{Feature}\\
+\hline
+&Non\_Uniformity\\
+&Non\_Uniformity\_Normalized\\
+&Variance\\
+&High\_Zone\_Emphasis\\
+&Large\_Area\_Emphasis\\
+&Large\_Area\_High\_Level\_Emphasis\\
+&Large\_Area\_Low\_Level\_Emphasis\\
+Grey&Low\_Zone\_Emphasis\\
+Level&Zone\_Non\_Uniformity\\
+Size&Zone\_Non\_Uniformity\_Normalized\\
+Zone&Small\_Area\_Emphasis\\
+Matrix&Small\_Area\_High\_Level\_Emphasis\\
+&Small\_Area\_Low\_Level\_Emphasis\\
+&Zone\_Entropy\\
+&Zone\_Percentage\\
+&Zone\_Variance\\
+\hline
+&Dependence\_Entropy\\
+&Dependence\_Non\_Uniformity\\
+&Dependence\_Non\_Uniformity\_Normalized\\
+&Dependence\_Variance\\
+&GL\_Non\_Uniformity\\
+&GL\_Variance\\
+Gray &High\_Emphasis\\
+Level &Large\_Dependence\_Emphasis\\
+Size&Large\_Dependence\_High\_Emphasis\\
+Zone&Large\_Dependence\_Low\_Emphasis\\
+Matrix&Low\_Emphasis\\
+&Small\_Dependence\_Emphasis\\
+&Small\_Dependence\_High\_Emphasis\\
+&Small\_Dependence\_Low\_Emphasis\\
+\hline
+Neighbouring&Busyness\\
+Gray&Coarseness\\
+Tone&Complexity\\
+Difference&Constrast\\
+Matrix&Strength\\
+\hline
+\end{tabular}
+\end{table}
+
+Therefore for each patient, the total number of features obtained are number of filters $\times$ number of features i.e, 17 $\times$ 100 = 1700 features. Once the entire feature set has been collected, the classification task can be started. 
+
+\subsection{Applying Pre-processing Techniques}
+
+From the 1700 features collected, not all of the features will contribute equally in the classification function. The process of preparing the input data for pattern learning by removing redundant characteristics, reducing noises and normalizing, selecting, and extracting features is termed as Data Pre-Processing. Multiple data pre-processing techniques have been applied to the feature set. These techniques have been descibed in Table $\ref{tb5}$.
+
+\begin{table}[!b]
+\scriptsize
+\centering
+\caption{Preprocessing techniques}
+\label{tb5}
+\begin{tabular}{| l | l |}
+\hline
+\textbf{Method} & \textbf{Description}\\
+\hline
+Missing Value Ratio & Removal of data columns where the  \\
+&number of missing values $\geq$ threshold\\
+\hline
+Low Varience Filter & Removal of normalized data columns \\
+&where the variance $\leq$ threshold\\
+\hline
+Highest correlation  & Removal of data columns which are \\
+filter&highly correlated leading to redundancy\\
+\hline
+Principle & Transformation of data to\\
+Component Analysis &maximize $\sigma\textsuperscript{2}$ under constraints\\
+\hline
+Fast Independent & Decomposition of signals to focus  \\
+Component Analysis &on mutual independence of data\\
+\hline
+Factor Analysis & Generating a common feature by \\
+&reducing number of common variables \\
+\hline
+\end{tabular}
+\end{table}
+
+Since the number of test subjects for each class is not similar, a threshold confidence level must be specified during the hypothesis testing phase. A 'P-value' is utilized in hypothesis testing to test the hypothesis under observation. A lower p-value corresponds to a higher confidence level in the predictions. The number of features selected after the pre-processing step is directly proportional to the p-value as a higher p-value will be more accomodating of even unimportant features. A grid for different p-values was created and the corresponding number of features were obtained.   
+
+\subsection{Model-based Predictions}
+
+Once the features have been narrowed down, the model building process begins. For any task on hand, we have a wide array of classifiers which accurately predict the nature of the test set. The set of classification algorithms considered are shown in Table $\ref{table:algos}$. In order to determine which algorithm would perform the best for our cohort dataset, we trained all the models on a standard benchmark dataset belonging to the same field i.e, the Winconsin Breast Cancer Diagnostic Dataset. The tabulated results for each algorithm is shown in Table $\ref{table:t1}$.
+
+\begin{table}[!t]
+\scriptsize
+\caption{Algorithms for traditional and ensembled classification and regression}
+\label{table:algos}
+\centering
+{
+\begin{tabular}{| l | l | l | l | }
+\hline
+\textbf{Index} & \textbf{Algorithm Name} & \textbf{Class} & \textbf{Purpose} \\
+\hline
+CT1 & Bagged Decision Tree & Traditional & Classification \\
+\hline
+CT2 & Balanced Bagged Decision Tree & Traditional &  Classification \\
+\hline
+CT3 & Bagged Random Forest & Traditional &  Classification \\
+\hline
+CT4 & Balanced Bagged Random Forest & Traditional & Classification \\
+\hline
+CT5 & Decision Tree & Traditional & Classification \\
+\hline
+CT6 & K-Nearest Neighbours & Traditional & Classification \\
+\hline
+CT7 & Neural Network & Traditional & Classification \\
+\hline
+CE1 & AdaBoost with Decision Tree & Ensemble & Classification (SR)\\
+\hline
+CE2 & AdaBoost with Decision Tree & Ensemble & Classification (S)\\
+\hline
+CE3 & AdaBoost with SVM & Ensemble & Classification (SR)\\
+\hline
+CE4 & AdaBoost with SVM & Ensemble & Classification (S)\\
+\hline
+CE5 & RUSBoost with Decision Tree & Ensemble & Classification (SR)\\
+\hline
+CE6 & RUSBoost with Decision Tree & Ensemble & Classification (S)\\
+\hline
+CE7 & RUSBoost with Random Forest & Ensemble & Classification (SR)\\
+\hline
+CE8 & RUSBoost with Random Forest & Ensemble & Classification (S)\\
+\hline
+CE9 & RUSBoost with SVM & Ensemble & Classification (SR)\\
+\hline
+CE10 & RUSBoost with SVM & Ensemble & Classification (S)\\
+\hline
+\end{tabular}
+}
+\end{table}
+
+\begin{table*}[!t]
+\scriptsize
+\caption{Performance Analysis}
+\label{table:t1}
+\centering
+{
+\begin{tabular}{| l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l |}
+\hline
+\textbf{Model} & {CT1} & {CT2} & {CT3} & {CT4} & {CT5} & {CT6} & {CT7} & {CE1} & {CE2}\\
+\hline
+\textbf{Accuracy Reading}& 0.9917 & 0.9870 & 0.9959 & 0.9959 & 0.9651 & 0.9949 & 1.0000 & 0.8713 & 0.9709\\
+\hline
+\textbf{Time Taken}& 44.2017 & 44.2017 & 27.9943 & 27.9943 & 15.5171 & 18.6339 & 26.5288 & 127.2628 & 127.2628\\
+\hline
+&&&&&&&&&\\
+\hline
+\textbf{Model} & {CE3} & {CE4} & {CE5} & {CE6} & {CE7} & {CE8} & {CE9} & {CE10} & \textbf{SFORCE (SR) with K-Fold cross validation} \\
+\hline
+\textbf{Accuracy Reading}& 1.0000 & 1.0000 & 0.9870 & 0.9896 & 1.0000 & 0.9977 & 0.9920 & 0.9977 & \textbf{0.9974} \\
+\hline
+\textbf{Time Taken}& 54.6694 & 54.6694 & 156.7184 & 156.7184 & 24.2733 & 24.2733 & 27.1538 & 27.1538 & \textbf{570.5684} \\
+\hline
+\end{tabular}
+}
+\end{table*}
+% 
+% \begin{table*}[!t]
+% \caption{Performance Analysis II}
+% \label{table:t2}
+% \centering
+% \scalebox{0.7}
+% {
+% \begin{tabular}{| l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l | l |}
+% \hline
+% {Model} & {CE3} & {CE4} & {CE5} & {CE6} & {CE7} & {CE8} & {CE9} & {CE10} & \textbf{SFORCE (SR)} & \textbf{SFORCE (SR) with K-Fold cross validation} \\
+% \hline
+% Accuracy Reading  & 1.0000 & 1.0000 & 0.9870 & 0.9896 & 1.0000 & 0.9977 & 0.9920 & 0.9977 & \textbf{0.9958} & \textbf{0.9974} \\
+% \hline
+% Time Taken & 54.6694 & 54.6694 & 156.7184 & 156.7184 & 24.2733 & 24.2733 & 27.1538 & 27.1538 & \textbf{220.5434} & \textbf{570.5684} \\
+% \hline
+% \end{tabular}
+% }
+% \end{table*}
+
+As determined, SFORCE (post validation) provides promising results without overfitting and hence is used to classify test subjects into the target classes. SFORCE establishes a symbiotic relation between a predictive model (Random Forest) and an Ensemble model (AdaBoost). Both these models work on the presented data simlutaneously, aiding each other in the prediction process. Random Forests provides a strong learning system with the occasional pitfall of overfitting. The data is classified based the features which contrast the classes with the highest information content. The process of data classification using Random Forest is shown in Algorithm $\ref{alg:rf}$. AdaBoost solves the problem of overfitting by presenting the system with the misclassified data and forcing it to improve the overall performance. The two flavours of AdaBoost i.e, SAMME and SAMME.R have been descibed in Algorithms $\ref{alg:samme}$ and $\ref{alg:sammer}$. SFORCE combines the strength of Random Forests and takes care of the  drawbacks by using a Boosting algorithm to make the search process more concentrated as shown in Algorithm $\ref{alg:sforce}$. 
+
+To obtain digital bio-markers, two cases studies were conducted from the avaiable cohort dataset. The first study involved classifying test subjects as TN or non TN subjects. In the second study, the Luminal-B dataset was set aside as the test dataset due to the close resemblance of it's characteristics with those of Luminal A. The model was trained to place the test subjects into the Luminal-A class with an accuracy of 72.7\%. The results for different p-values have been descibed in Tables $\ref{tb6}$ and $\ref{tb7}$. Based on these results, box-plots have been obtained for the selected features which act as bio-markers for future reference.
+
+
+\begin{table}[!b]
+\scriptsize
+\centering
+\caption{TN vs Non-TN}
+\label{tb6}
+\begin{tabular}{| c | c | c | c |}
+\hline
+\textbf{P-Value} & \textbf{Number of} & \textbf{Accuracy} & \textbf{Accuracy}\\
+&Features&(SAMME)&(SAMME.R)\\
+\hline
+1&20&81.25&90.39\\
+\hline
+0.5&16&90.39&93.25\\
+\hline
+0.1&6&75&81.25\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!b]
+\scriptsize
+\centering
+\caption{HER vs Luminal-A vs TN}
+\label{tb7}
+\begin{tabular}{| c | c | c | c |}
+\hline
+\textbf{P-Value} & \textbf{Number of} & \textbf{Accuracy} & \textbf{Accuracy}\\
+&Features&(SAMME)&(SAMME.R)\\
+\hline
+1E-5&16&72&63.63\\
+\hline
+1E-6&15&70&72.7\\
+\hline
+1E-7&13&72.7&70\\
+\hline
+\end{tabular}
+\end{table}
+
+% \begin{algorithm}
+% \begin{algorithmic}[1]
+% \STATE Start
+% \end{algorithmic}
+% \end{algorithm}
+\begin{algorithm}[!t]
+\caption{: Ensemble Learning: Random Forest}\label{alg:rf}
+\begin{algorithmic}[1]
+\footnotesize
+\STATE \textbf{// Input:} Data Set D = \{(\(x_1, y_1\)),(\(x_2, y_2\)), \dots\, ((\(x_m, y_m\))\}, Feature Set F, Randomization Factor R, Number of trees T 
+\\\textbf{// Output:} Root node of i\textsuperscript{th} tree
+\STATE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\FOR { $ \forall i \in \{1, 2, \dots\, T\}$ } 
+\STATE {$ N_i \gets$ Root node of i\textsuperscript{th} tree}
+\IF {All targets belong to same class i.e $ y_i $ or $F \in \emptyset $ }
+\STATE { Return $N_i$}
+\ENDIF
+%\If {$F \in \emptyset $} \STATE { Return $N_i$} \ENDIF
+\STATE { $ D_i \leftarrow $ bootstraped sample from D }  
+\FOR {Each node}
+\STATE { $ f \leftarrow $ Randomly selected $ R $ features from $ F $ }
+\STATE { $ N_f \leftarrow $ Best Feature from $ f $ features }
+\STATE { $ N_p \leftarrow $ Best Split based on $ N_f $ }
+\ENDFOR
+\ENDFOR
+\STATE { \textbf{ return $ N_i $ } }
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[!t]
+\caption{: Stagewise Additive Modeling: SAMME }\label{alg:samme}
+\begin{algorithmic}[1]
+\footnotesize
+%\\\textbf{// Purpose:} Pairwise Sequence Alignment of query sequences and reference index elements with DP algorithms
+\STATE \textbf{// Input:} Data Set D = \{(\(x_1, y_1\)),(\(x_2, y_2\)), \dots\, ((\(x_m, y_m\))\}, Number of Learning Rounds T, Learning Algorithm $ \epsilon $  
+\STATE \textbf{// Output:} sign($\sum_{t=1}^{T} \alpha_t.C_t$)
+\STATE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\STATE \emph{$D_1$(x)} = 1/m \COMMENT{Initialize the weight distribution}
+\FOR { $ t = \{1, 2, \dots\, T\}$ } 
+\STATE \emph{$C_t$} = $\epsilon$(D,\emph{$D_t$}) \COMMENT{Create classifier $C_t$}
+\STATE $e_t$ = \emph{$P_{x \sim \emph{D}}$}(\emph{$h_t$(x) $\neq$ f(x)}) \COMMENT{Calculate error $e_t$}
+\STATE $\alpha_t$ = $log{\dfrac{1-e_t}{e_t}}$ + log($\emph{K-1}$) \COMMENT{Calculate the weight $h_t$}
+\STATE \emph{$D_i$(x)} $\leftarrow$ \emph{$D_i$(x)}.exp($\alpha_t$.P($\emph{$C_i$} \neq f(x)$)) \COMMENT{Update the distribution $D_t$}, $ i = \{1, 2, \dots\, m\}$
+\STATE {Renormalize \emph{$D_t$(x)}}
+\ENDFOR 
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[!t]
+\caption{: Stagewise Additive Modeling for Real Value Predictions: SAMME.R }\label{alg:sammer}
+\begin{algorithmic}[1]
+\footnotesize
+%\\\textbf{// Purpose:} Pairwise Sequence Alignment of query sequences and reference index elements with DP algorithms
+\STATE \textbf{// Input:} Data Set D = \{(\(x_1, y_1\)),(\(x_2, y_2\)), \dots\, ((\(x_m, y_m\))\}, Number of Learning Rounds T, Learning Algorithm $ \epsilon $  
+\STATE \textbf{// Output:} sign($\sum_{t=1}^{T} \alpha_t.C_t$)
+\STATE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\STATE \emph{$D_1$(x)} = 1/m \COMMENT{Initialize the weight distribution}
+\FOR { $ t = \{1, 2, \dots\, T\}$ } 
+\STATE \emph{$C_t$} = $\epsilon$(D,\emph{$D_t$}) \COMMENT{Create classifier $C_t$}
+\STATE {$p_{kt}(x)$ = Prob($y=k|x$)}, $ k = \{1, 2, \dots\, K\}$
+\STATE {$h_{kt}(x)$} $\leftarrow$ ($K$ - 1)($log{p_{kt}(x)}$ - $\dfrac{1}{K}.\sum_{k'} log{p_{k't}}$(x))
+%\STATE $e_t$ = \emph{$P_{x~\emph{D}}$}(\emph{$h_t$(x) $\neq$ f(x)}) \COMMENT{Calculate error $e_t$}
+%\STATE $\alpha_t$ = $log{\dfrac{1-e_t}{e_t}}$ + log($\emph{K-1}$) \COMMENT{Calculate the weight $h_t$}
+\STATE \emph{$D_i$(x)} $\leftarrow$ \emph{$D_i$(x)}.exp($\dfrac{1-K}{K}$.$y_{i}^{ \textbf{T} }.log({p_t}(x_i)$)    ) \COMMENT{Update the distribution $D_t$, $ i = \{1, 2, \dots\, m\}$ }
+\STATE {Renormalize \emph{$D_t$(x)}}
+\ENDFOR 
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[!t]
+\caption{: Ensemble of Ensemble: SFORCE}\label{alg:sforce}
+\begin{algorithmic}[1]
+\footnotesize
+%\\\textbf{// Purpose:} Pairwise Sequence Alignment of query sequences and reference index elements with DP algorithms
+\STATE \textbf{// Input:} Data Set D = \{(\(x_1, y_1\)),(\(x_2, y_2\)), \dots\, ((\(x_m, y_m\))\}, Feature Set F, Randomization Factor R, Number of trees T,Number of Learning Rounds T', Learning Algorithm $ \epsilon $   
+\STATE \textbf{// Output:} Root node of i\textsuperscript{th} Boosted Tree
+\STATE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\STATE{Random Forest}
+\FOR { $ \forall i \in \{1, 2, \dots\, T\}$ } 
+\STATE {$ N_i \gets$ Root node of i\textsuperscript{th} tree}
+\IF {All targets belong to same class i.e $ y_i $ or $F \in \emptyset $ } 
+\STATE Call SAMME.R with {$N_i$} 
+\ENDIF
+%\If {$F \in \emptyset $} \STATE { Return $N_i$} \ENDIF
+\STATE { $ D^i \leftarrow $ bootstraped sample from D }  
+\FOR {Each node}
+\STATE { $ f \leftarrow $ Randomly selected $ R $ features from $ F $ }
+\STATE { $ N_f \leftarrow $ Best Feature from $ f $ features }
+\STATE { $ N_p \leftarrow $ Best Split based on $ N_f $ }
+\STATE Call SAMME.R with {$N_i$}
+\ENDFOR
+\ENDFOR
+\STATE { \textbf{ return $ N_i $ } }
+\STATE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\STATE{SAMME/SAMME.R}
+\STATE \emph{$D_1$(x)} = 1/m \COMMENT{Initialize the weight distribution}
+\FOR { $ t = \{1, 2, \dots\, T\}$ } 
+\STATE \emph{$C_t$} = $\epsilon$(D,\emph{$D_t$}) \COMMENT{Create classifier $C_t$}
+\STATE {$p_{kt}(x)$ = Prob($y=k|x$)}, $ k = \{1, 2, \dots\, K\}$
+\STATE {$h_{kt}(x)$} $\leftarrow$ ($K$ - 1)($log{p_{kt}(x)}$ - $\dfrac{1}{K}.\sum_{k'} log{p_{k't}}$(x))
+%\STATE $e_t$ = \emph{$P_{x~\emph{D}}$}(\emph{$h_t$(x) $\neq$ f(x)}) \COMMENT{Calculate error $e_t$}
+%\STATE $\alpha_t$ = $log{\dfrac{1-e_t}{e_t}}$ + log($\emph{K-1}$) \COMMENT{Calculate the weight $h_t$}
+\STATE \emph{$D_i$(x)} $\leftarrow$ \emph{$D_i$(x)}.exp($\dfrac{1-K}{K}$.$y_{i}^{ \textbf{T} } .log({p_t}(x_i)$)    ) \COMMENT{$ i = \{1, 2, \dots\, m\}$}
+\STATE {Renormalize \emph{$D_t$(x)}}
+\STATE Call Random Forest with {($\sum_{t=1}^{T'} \alpha_t.C_t$)}
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[!t]
+\caption{DigiOnco: Algorithmic Flow}\label{main}
+\begin{algorithmic}[1]
+\footnotesize
+\STATE //Input Image dataset $D\textsubscript{n}$ and masks $D\textsubscript{m}$ 
+\STATE //Output Predicted Class
+\FOR {Each image $i$ in $D\textsubscript{n}$}
+\STATE Convert image to a suitable format using conversion software
+\STATE Call the pre-processsing techniques on the formatted images
+\STATE Using mask $j$ for corresponding $i$, extract radiomics features
+\STATE Create a grid of p-values
+\FOR {EACH value in grid}
+\STATE Call Algorithm $\ref{alg:sforce}$ with related feature set
+\ENDFOR
+\STATE Obtain accuracy levels and digital bio-markers
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+
+\section{Results and Conclusion}
+
+From the data-driven pipeline, quantifiable digital biomarkers were obtained in the form of box and whisker plots. These plots provide a convinient method of displaying the data distribution and provide insight to the oncological expert during prognosis of future test subjects. Sample box plots have been displayed in Figures $\ref{fig:sfig1}$ to $\ref{fig:sfig4}$. The entire list of digital biomarkers along with their corresponding box plots have been included in the supplementary material. Note that the number of digital biomarkers correspond to the number of the box plots which in turn corresponds to number of features selected. 
+
+The pipeline developed for this study consists of multidisciplinary stages with involvement of both Radiomics and modern statistics. While Radiomics provides a real-world application based avenue, statistical tools were used to narrow down our biomarker search process. The aim of condensing the number of features is to preserve the features with the highest level information embedded in them. 
+
+However it must also be duely noted that this pipeline is quite delicate when it comes to producing results as the errors encountered in each step are rippled onto the next stages. Furthermore an increased sample dataset size could help further fine tune the model. Additional Deep Learning frameworks can also be introduced to provide competition to the incumbent design model.  
+% 
+% \begin{figure}[t]
+% \begin{subfigure}{}
+%   \centering
+%   % include first image
+%   \includegraphics[width=.8\linewidth]{bg1.png}  
+% %   \caption{Put your sub-caption here}
+%   \label{fig:sub-first}
+% \end{subfigure}
+% \begin{subfigure}{}
+%   \centering
+%   % include second image
+%   \includegraphics[width=.8\linewidth]{bg2.png}  
+% %   \caption{Put your sub-caption here}
+%   \label{fig:sub-second}
+% \end{subfigure}
+% \begin{subfigure}{}
+%   \centering
+%   % include first image
+%   \includegraphics[width=.8\linewidth]{tg1.png}  
+% %   \caption{Put your sub-caption here}
+%   \label{fig:sub-first}
+% \end{subfigure}
+% \begin{subfigure}{}
+%   \centering
+%   % include second image
+%   \includegraphics[width=.8\linewidth]{tg2.png}  
+% %   \caption{Put your sub-caption here}
+%   \label{fig:sub-second}
+% \end{subfigure}
+% \caption{Sample Box Plots}
+% \end{figure}
+% 
+
+\begin{figure}
+\begin{subfigure}{}
+  \centering
+  \includegraphics[width=8cm]{bg1.png}
+  \caption{}
+  \label{fig:sfig1}
+\end{subfigure}%
+\begin{subfigure}{}
+  \centering
+  \includegraphics[width=8cm]{bg2.png}
+  \caption{}
+  \label{fig:sfig2}
+\end{subfigure}
+\begin{subfigure}{}
+  \centering
+  \includegraphics[width=8cm]{tg1.png}
+  \caption{}
+  \label{fig:sfig3}
+\end{subfigure}%
+\begin{subfigure}{}
+  \centering
+  \includegraphics[width=8cm]{tg2.png}
+  \caption{}
+  \label{fig:sfig4}
+\end{subfigure}
+% \caption{plots of....}
+% \label{fig:fig}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=3in]{acc1.png}
+\caption{TN vs Non-TN Classification Accuracies}
+\label{img5}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=3in]{acc2.png}
+\caption{TN vs Luminal-A vs HER Classification Accuracies}
+\label{img6}
+\end{figure}
+
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+
+\bibliographystyle{model1-num-names}
+\bibliography{sample.bib}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.
