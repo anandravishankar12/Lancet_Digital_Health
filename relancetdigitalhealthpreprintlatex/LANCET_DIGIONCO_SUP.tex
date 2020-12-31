@@ -1,0 +1,291 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+% \documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+% \documentclass[final,1p,times]{elsarticle}
+\documentclass[10pt,final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{lipsum}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\usepackage{amsmath}% http://ctan.org/pkg/amsmath
+\newcommand\sufr[3][0pt]{$\rule{0pt}{\dimexpr#1+1.4ex\relax}^\frac{#2}{#3}$}
+
+
+\usepackage{graphicx}
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+\usepackage{subfigure}
+\usepackage{stfloats}
+
+
+\journal{Lancet Digital Health}
+
+\begin{document}
+
+\begin{frontmatter}
+\title{DigiOnco: A Pipeline to Unveil Digital Non-Invasive Biomarkers from Multi-parametric Radiomics Footprints}
+
+%% use optional labels to link authors explicitly to addresses:
+% \author[label1,label2]{<author name>}
+%  \address[label1]{<address>}
+%  \address[label2]{<address>}
+
+\author[label1]{Santhi Natarajan, Anand Ravishankar, Bharathi Malakreddy A}
+\author[label2]{G.Lohith, Kritika Sekar, Shivakumar Swamy, Kumar Kallur, Basavalinga Ajai Kumar, Mahesh Bandimegal, Krithika Murugan}
+\address[label1]{BMS Institute of Technology and Management, Visweswaraiah Technological Univesity, Bangalore, India}
+\address[label2]{Health Care Global Hospitals, Bangalore, India}
+\end{frontmatter}
+\section{Study Results}
+
+The following material describes the entire result set obtained during the study. To recapitulate, our study consisted of two classification tasks namely, TN vs Non-TN and TN vs Luminal-A vs HER. Once the training phase is completed the model configuration is loaded into the testing mechanism. The test data consisted solely of Luminal-B patients given the correlation of Luminal-A and Luminal-B data characteristics. The results described in the main material concludes at the training phase and provides a taste of the actual digital biomarkers obtained. Tables $\ref{tb1}$ and $\ref{tb2}$ provide a summary of the features selected after the pre-processing step. The selection is done mainly on the amount of distingushing information each feature offers. Moreover, various filters have also been applied to provide a expansive view.  The corresponding box plots having been shown in Figure Sets $\ref{f1}$ and $\ref{f2}$. Notice that not all box plots can be utilized optimally for distinuishing the different classes due to closeness in the measured value. To counter this problem, we introduced the concept of higher dimension plots which provide a user-friendly interface to the end user. A clear correlation can be established between the features and targets resulting in a more informed decision making stance.  
+
+\begin{table}[!b]
+\centering
+\caption{Final Feature Set for TN vs Non-TN}
+\label{tb1}
+\begin{tabular}{| c | c | c |}
+\hline
+Sr. No. & Feature & Filter\\
+\hline
+1 & Coarseness & Square\\
+\hline
+2 & Cluster\_Shade & Laplacian of Gaussian, Sigma = 3\\
+\hline
+3& Cluster\_Shade & - \\
+\hline
+4& Minimum & Square\\
+\hline
+5& Mean & Wavelet = HHH \\
+\hline
+6& Skewness & Wavelet = HHH\\
+\hline
+7& Correlation & Wavelet = HHH\\
+\hline
+8& Energy & Wavelet = HHL\\
+\hline
+9& Energy & Wavelet = HLH\\
+\hline
+10& Mean & Wavelet = HLH\\
+\hline
+11& Skewness & Wavelet = HLH\\
+\hline
+12& Energy & Wavelet = HLL\\
+\hline
+13& Cluster\_Shade & Wavelet = LHH\\
+\hline
+14& Energy & Wavelet = LLH\\
+\hline
+15& Energy & Wavelet = LLL\\
+\hline
+16& Skewness & Wavelet = LLH\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!b]
+\centering
+\caption{Final Feature Set for TN vs Luminal-A vs HER}
+\label{tb2}
+\begin{tabular}{| c | c | c |}
+\hline
+Sr. No. & Feature & Filter\\
+\hline
+1 & Kurtosis & Exponential\\
+\hline
+2 & Cluster\_Tendency & Square\\
+\hline
+3& Cluster\_Prominance & Square \\
+\hline
+4& MCC & Square\\
+\hline
+5& Cluster\_Shade & Square \\
+\hline
+6& Mean & Wavelet = HHL\\
+\hline
+7& Energy & Wavelet = HHL\\
+\hline
+8& Skewness & Wavelet = HLL\\
+\hline
+9& Energy & Wavelet = HLL\\
+\hline
+10& Energy & Wavelet = LHH\\
+\hline
+11& Energy & Wavelet = LHL\\
+\hline
+12& Cluster\_Prominance & Wavelet = LLH\\
+\hline
+13& Skewness & Wavelet = LLH\\
+\hline
+14& Cluster\_Shade & Laplacian of Gaussian, Sigma = 3\\
+\hline
+15& Cluster\_Shade & -\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure*}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-05.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-06.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-07.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-08.png}\par 
+    \end{multicols}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-09.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-10.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-11.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-12.png}\par 
+\end{multicols}
+\end{figure*}
+
+\begin{figure*}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-13.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-14.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-15.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-16.png}\par 
+    \end{multicols}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-17.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-18.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-19.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-20.png}\par 
+\end{multicols}
+\caption{Boxplots for TN vs Non-TN}
+\label{f1}
+\end{figure*}
+
+\begin{figure*}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-01.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-02.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-03.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-04.png}\par 
+    \end{multicols}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-05.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-06.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-07.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-08.png}\par 
+\end{multicols}
+\end{figure*}
+
+\begin{figure*}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-09.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-10.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-11.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-12.png}\par 
+    \end{multicols}
+\begin{multicols}{2}
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-13.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-14.png}\par 
+    \includegraphics[width=6.7cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-15.png}\par 
+\end{multicols}
+\caption{Boxplots for TN vs Luminal A vs HER}
+\label{f2}
+\end{figure*}
+
+\begin{figure*}
+  \includegraphics[width=16.7cm,height=9cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/binary.png}
+  \caption{Binary Higher Dimensional Plot}
+\end{figure*}
+\begin{figure*}
+  \includegraphics[width=16.7cm,height=9cm]{/home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/ternary.png}
+  \caption{Ternary Higher Dimensional Plot}
+\end{figure*}
+\bibliographystyle{model1-num-names}
+\bibliography{sample.bib}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.
