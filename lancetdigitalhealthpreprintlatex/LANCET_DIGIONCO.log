@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.14)  30 DEC 2020 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.14)  7 JAN 2021 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -557,46 +557,46 @@ ings
 (./LANCET_DIGIONCO.aux)
 \openout1 = `LANCET_DIGIONCO.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 93.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 99.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-93.
+99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-93.
+99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-93.
+99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 9
-3.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
-3.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -660,135 +660,115 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 130.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 136.
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-51.
+57.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 151
+LaTeX Font Info:    Trying to load font information for U+msa on input line 157
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 151
+LaTeX Font Info:    Trying to load font information for U+msb on input line 157
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-51.
+57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (1.90001pt too wide) has occurred while \output is active
 [] 
  []
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<flowchart.png, id=13, 571.13374pt x 463.7325pt>
-File: flowchart.png Graphic file (type png)
-<use flowchart.png>
-Package pdftex.def Info: flowchart.png  used on input line 190.
-(pdftex.def)             Requested size: 289.07999pt x 234.71729pt.
+[2] [3]
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <7> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 206.
- [3]
-<im.png, id=19, 1064.97874pt x 926.46124pt>
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 237.
+<im.png, id=17, 1184.425pt x 1140.26pt>
 File: im.png Graphic file (type png)
 <use im.png>
-Package pdftex.def Info: im.png  used on input line 228.
-(pdftex.def)             Requested size: 390.25755pt x 339.49146pt.
+Package pdftex.def Info: im.png  used on input line 259.
+(pdftex.def)             Requested size: 390.25755pt x 375.6954pt.
 
-Overfull \hbox (6.25755pt too wide) in paragraph at lines 228--229
+Overfull \hbox (6.25755pt too wide) in paragraph at lines 259--260
  [][] 
  []
 
-[4 <./flowchart.png>] [5 <./im.png>] [6] [7] [8]
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 590.
-LaTeX Font Info:    Trying to load font information for OMS+txr on input line 5
-90.
+[4] [5 <./im.png>]
+Overfull \hbox (56.84402pt too wide) in paragraph at lines 332--388
+ [][] 
+ []
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 590.
-
-
-LaTeX Warning: Reference `fig:sfig1' on page 9 undefined on input line 715.
-
-
-LaTeX Warning: Reference `fig:sfig4' on page 9 undefined on input line 715.
-
-[9] [10]
-<bg1.png, id=50, 1204.5pt x 644.4075pt>
+[6] [7] [8] [9]
+<bg1.png, id=42, 988.69376pt x 442.65375pt>
 File: bg1.png Graphic file (type png)
 <use bg1.png>
-Package pdftex.def Info: bg1.png  used on input line 789.
-(pdftex.def)             Requested size: 155.51788pt x 83.19577pt.
-<bg2.png, id=51, 1201.48875pt x 644.4075pt>
+Package pdftex.def Info: bg1.png  used on input line 705.
+(pdftex.def)             Requested size: 155.51788pt x 69.62376pt.
+<bg2.png, id=43, 976.64874pt x 437.635pt>
 File: bg2.png Graphic file (type png)
 <use bg2.png>
-Package pdftex.def Info: bg2.png  used on input line 794.
-(pdftex.def)             Requested size: 155.51788pt x 83.40227pt.
-<tg1.png, id=52, 1192.455pt x 644.4075pt>
+Package pdftex.def Info: bg2.png  used on input line 711.
+(pdftex.def)             Requested size: 155.51788pt x 69.68246pt.
+<tg1.png, id=44, 980.66376pt x 434.62375pt>
 File: tg1.png Graphic file (type png)
 <use tg1.png>
-Package pdftex.def Info: tg1.png  used on input line 799.
-(pdftex.def)             Requested size: 155.51788pt x 84.0414pt.
-<tg2.png, id=53, 1199.48125pt x 644.4075pt>
+Package pdftex.def Info: tg1.png  used on input line 717.
+(pdftex.def)             Requested size: 155.51788pt x 68.92445pt.
+<tg2.png, id=45, 988.69376pt x 435.6275pt>
 File: tg2.png Graphic file (type png)
 <use tg2.png>
-Package pdftex.def Info: tg2.png  used on input line 804.
-(pdftex.def)             Requested size: 155.51788pt x 83.54976pt.
-<acc1.png, id=54, 854.19125pt x 606.265pt>
+Package pdftex.def Info: tg2.png  used on input line 723.
+(pdftex.def)             Requested size: 155.51788pt x 68.51863pt.
+<acc1.png, id=46, 854.19125pt x 606.265pt>
 File: acc1.png Graphic file (type png)
 <use acc1.png>
-Package pdftex.def Info: acc1.png  used on input line 831.
+Package pdftex.def Info: acc1.png  used on input line 751.
 (pdftex.def)             Requested size: 155.51788pt x 110.37186pt.
-<acc2.png, id=55, 854.19125pt x 606.265pt>
+<acc2.png, id=47, 854.19125pt x 606.265pt>
 File: acc2.png Graphic file (type png)
 <use acc2.png>
-Package pdftex.def Info: acc2.png  used on input line 836.
+Package pdftex.def Info: acc2.png  used on input line 755.
 (pdftex.def)             Requested size: 155.51788pt x 110.37186pt.
- [11] [12 <./bg1.png> <./bg2.png> <./tg1.png> <./tg2.png> <./acc1.png> <./acc2.
-png>]
+ [10 <./bg1.png> <./bg2.png> <./tg1.png> <./tg2.png> <./acc1.png> <./acc2.png>]
+
 No file LANCET_DIGIONCO.bbl.
-[13] (./LANCET_DIGIONCO.aux)
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 1242) in paragraph at lines 818--819
+\OT1/txr/m/n/8 negative breast can-cer us-ing im-muno-his-to-chem-i-cal mark-er
+s. On-col Lett. 2016 Aug;12(2):1240-1256. doi:
+ []
 
- ) 
+[11] [12] (./LANCET_DIGIONCO.aux) ) 
 Here is how much of TeX's memory you used:
- 5284 strings out of 481239
- 75569 string characters out of 5920376
- 503806 words of memory out of 5000000
- 20425 multiletter control sequences out of 15000+600000
- 573326 words of font info for 114 fonts, out of 8000000 for 9000
+ 5289 strings out of 481239
+ 75435 string characters out of 5920376
+ 511806 words of memory out of 5000000
+ 20440 multiletter control sequences out of 15000+600000
+ 568117 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,17n,34p,1923b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/r
-txr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on LANCET_DIGIONCO.pdf (13 pages, 546540 bytes).
+ 38i,17n,34p,1053b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvi
+ps/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on LANCET_DIGIONCO.pdf (12 pages, 626671 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.14)  31 DEC 2020 10:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.14)  5 JAN 2021 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,6 +516,24 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen159
+\captionmargin@=\dimen160
+\captionwidth=\dimen161
+\caption@tempdima=\dimen162
+\caption@indent=\dimen163
+\caption@parindent=\dimen164
+\caption@hangindent=\dimen165
+Package caption Info: elsarticle document class detected.
+)
+\c@caption@flags=\count266
+\c@continuedfloat=\count267
+)
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip55
@@ -527,46 +545,46 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen159
+\ex@=\dimen166
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen160
+\pmbraise@=\dimen167
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count266
+\inf@bad=\count268
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count267
-\leftroot@=\count268
+\uproot@=\count269
+\leftroot@=\count270
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count269
-\DOTSCASE@=\count270
+\classnum@=\count271
+\DOTSCASE@=\count272
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box98
 \strutbox@=\box99
-\big@size=\dimen161
+\big@size=\dimen168
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count271
-\c@MaxMatrixCols=\count272
+\macc@depth=\count273
+\c@MaxMatrixCols=\count274
 \dotsspace@=\muskip16
-\c@parentequation=\count273
-\dspbrk@lvl=\count274
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
 \tag@help=\toks20
-\row@=\count275
-\column@=\count276
-\maxfields@=\count277
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
 \andhelp@=\toks21
-\eqnshift@=\dimen162
-\alignsep@=\dimen163
-\tagshift@=\dimen164
-\tagwidth@=\dimen165
-\totwidth@=\dimen166
-\lineht@=\dimen167
+\eqnshift@=\dimen169
+\alignsep@=\dimen170
+\tagshift@=\dimen171
+\tagwidth@=\dimen172
+\totwidth@=\dimen173
+\lineht@=\dimen174
 \@envbody=\toks22
 \multlinegap=\skip56
 \multlinetaggap=\skip57
@@ -580,10 +598,10 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@ALC@unique=\count278
-\c@ALC@line=\count279
-\c@ALC@rem=\count280
-\c@ALC@depth=\count281
+\c@ALC@unique=\count280
+\c@ALC@line=\count281
+\c@ALC@rem=\count282
+\c@ALC@depth=\count283
 \ALC@tlm=\skip58
 \algorithmicindent=\skip59
 )
@@ -593,27 +611,27 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count282
+\c@float@type=\count284
 \float@exts=\toks24
 \float@box=\box100
 \@float@everytoks=\toks25
 \@floatcapt=\box101
 )
 \@float@every@algorithm=\toks26
-\c@algorithm=\count283
+\c@algorithm=\count285
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip60
 \subfigcapskip=\skip61
-\subfigcaptopadj=\dimen168
+\subfigcaptopadj=\dimen175
 \subfigbottomskip=\skip62
-\subfigcapmargin=\dimen169
+\subfigcapmargin=\dimen176
 \subfiglabelskip=\skip63
-\c@subfigure=\count284
-\c@lofdepth=\count285
-\c@subtable=\count286
-\c@lotdepth=\count287
+\c@subfigure=\count286
+\c@lofdepth=\count287
+\c@subtable=\count288
+\c@lotdepth=\count289
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -625,68 +643,68 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count288
-\c@dblbotnumber=\count289
+\@dblbotnum=\count290
+\c@dblbotnumber=\count291
 )
 (./LANCET_DIGIONCO_SUP.aux)
 \openout1 = `LANCET_DIGIONCO_SUP.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 94.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 97.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-94.
+97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 97.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-94.
+97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 97.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-94.
+97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 97.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 9
-4.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    ... okay on input line 97.
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
-4.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen170
+\scratchcounter=\count292
+\scratchdimen=\dimen177
 \scratchbox=\box102
-\nofMPsegments=\count291
-\nofMParguments=\count292
+\nofMPsegments=\count293
+\nofMParguments=\count294
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen171
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
+\MPscratchCnt=\count295
+\MPscratchDim=\dimen178
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -733,492 +751,40 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-08.
+11.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 108
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 108
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-08.
+11.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 109.
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-05.png, i
-d=1, 1660.2025pt x 868.24374pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-05.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-05.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-05.png  used on input line 199.
-(pdftex.def)             Requested size: 190.63338pt x 99.69357pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 199--199
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-06.png, i
-d=2, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-06.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-06.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-06.png  used on input line 200.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 200--200
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-07.png, i
-d=3, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-07.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-07.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-07.png  used on input line 201.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 201--201
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-08.png, i
-d=4, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-08.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-08.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-08.png  used on input line 202.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 202--202
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-09.png, i
-d=5, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-09.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-09.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-09.png  used on input line 205.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 205--205
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-10.png, i
-d=6, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-10.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-10.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-10.png  used on input line 206.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 206--206
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-11.png, i
-d=7, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-11.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-11.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-11.png  used on input line 207.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-12.png, i
-d=8, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-12.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-12.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-12.png  used on input line 208.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 208--208
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-13.png, i
-d=9, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-13.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-13.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-13.png  used on input line 214.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 214--214
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-14.png, i
-d=10, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-14.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-14.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-14.png  used on input line 215.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 215--215
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-15.png, i
-d=11, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-15.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-15.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-15.png  used on input line 216.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 216--216
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-16.png, i
-d=12, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-16.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-16.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-16.png  used on input line 217.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 217--217
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-17.png, i
-d=13, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-17.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-17.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-17.png  used on input line 220.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 220--220
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-18.png, i
-d=14, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-18.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-18.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-18.png  used on input line 221.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 221--221
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-19.png, i
-d=15, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-19.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-19.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-19.png  used on input line 222.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 222--222
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-20.png, i
-d=16, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-20.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part1_pngs-20.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part1_pngs-20.png  used on input line 223.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 223--223
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-01.png, i
-d=17, 1656.1875pt x 865.2325pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-01.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-01.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-01.png  used on input line 231.
-(pdftex.def)             Requested size: 190.63338pt x 99.58545pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 231--231
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-02.png, i
-d=18, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-02.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-02.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-02.png  used on input line 232.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 232--232
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-03.png, i
-d=19, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-03.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-03.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-03.png  used on input line 233.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 233--233
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-04.png, i
-d=20, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-04.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-04.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-04.png  used on input line 234.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 234--234
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-05.png, i
-d=21, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-05.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-05.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-05.png  used on input line 237.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 237--237
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-06.png, i
-d=22, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-06.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-06.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-06.png  used on input line 238.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 238--238
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-07.png, i
-d=23, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-07.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-07.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-07.png  used on input line 239.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 239--239
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-08.png, i
-d=24, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-08.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-08.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-08.png  used on input line 240.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 240--240
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-09.png, i
-d=25, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-09.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-09.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-09.png  used on input line 246.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 246--246
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-10.png, i
-d=26, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-10.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-10.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-10.png  used on input line 247.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 247--247
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-11.png, i
-d=27, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-11.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-11.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-11.png  used on input line 248.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 248--248
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-12.png, i
-d=28, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-12.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-12.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-12.png  used on input line 249.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 249--249
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-13.png, i
-d=29, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-13.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-13.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-13.png  used on input line 252.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 252--252
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-14.png, i
-d=30, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-14.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-14.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-14.png  used on input line 253.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 253--253
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-15.png, i
-d=31, 796.8972pt x 448.5558pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-15.p
-ng Graphic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/part2_pngs-15.pn
-g>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/part2_pngs-15.png  used on input line 254.
-(pdftex.def)             Requested size: 190.63338pt x 107.29967pt.
-
-Overfull \hbox (3.63338pt too wide) in paragraph at lines 254--254
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/binary.png, id=32, 1
-926.19624pt x 643.40375pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/binary.png Grap
-hic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/binary.png>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/binary.png  used on input line 261.
-(pdftex.def)             Requested size: 475.14056pt x 256.08066pt.
-
-Overfull \hbox (91.14056pt too wide) in paragraph at lines 261--262
-[][] 
- []
-
-</home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/ternary.png, id=34, 
-1926.19624pt x 639.38875pt>
-File: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/ternary.png Gra
-phic file (type png)
-<use /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/sup/ternary.png>
-Package pdftex.def Info: /home/anand/Desktop/Projects/HCG_project/HCG/IEEEtran/
-sup/ternary.png  used on input line 265.
-(pdftex.def)             Requested size: 475.14056pt x 256.07292pt.
-
-Overfull \hbox (91.14056pt too wide) in paragraph at lines 265--266
-[][] 
- []
-
-No file LANCET_DIGIONCO_SUP.bbl.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 112.
+<flowchart.png, id=1, 571.13374pt x 463.7325pt>
+File: flowchart.png Graphic file (type png)
+<use flowchart.png>
+Package pdftex.def Info: flowchart.png  used on input line 120.
+(pdftex.def)             Requested size: 304.4444pt x 247.19225pt.
 
 Overfull \hbox (1.90001pt too wide) has occurred while \output is active
 [] 
@@ -1226,57 +792,124 @@ Overfull \hbox (1.90001pt too wide) has occurred while \output is active
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 </home/anand/Desktop/Pr
-ojects/HCG_project/HCG/IEEEtran/sup/part1_pngs-05.png> </home/anand/Desktop/Pro
-jects/HCG_project/HCG/IEEEtran/sup/part1_pngs-06.png> </home/anand/Desktop/Proj
-ects/HCG_project/HCG/IEEEtran/sup/part1_pngs-07.png> </home/anand/Desktop/Proje
-cts/HCG_project/HCG/IEEEtran/sup/part1_pngs-08.png> </home/anand/Desktop/Projec
-ts/HCG_project/HCG/IEEEtran/sup/part1_pngs-09.png> </home/anand/Desktop/Project
-s/HCG_project/HCG/IEEEtran/sup/part1_pngs-10.png> </home/anand/Desktop/Projects
-/HCG_project/HCG/IEEEtran/sup/part1_pngs-11.png> </home/anand/Desktop/Projects/
-HCG_project/HCG/IEEEtran/sup/part1_pngs-12.png>] [3 </home/anand/Desktop/Projec
-ts/HCG_project/HCG/IEEEtran/sup/part1_pngs-13.png> </home/anand/Desktop/Project
-s/HCG_project/HCG/IEEEtran/sup/part1_pngs-14.png> </home/anand/Desktop/Projects
-/HCG_project/HCG/IEEEtran/sup/part1_pngs-15.png> </home/anand/Desktop/Projects/
-HCG_project/HCG/IEEEtran/sup/part1_pngs-16.png> </home/anand/Desktop/Projects/H
-CG_project/HCG/IEEEtran/sup/part1_pngs-17.png> </home/anand/Desktop/Projects/HC
-G_project/HCG/IEEEtran/sup/part1_pngs-18.png> </home/anand/Desktop/Projects/HCG
-_project/HCG/IEEEtran/sup/part1_pngs-19.png> </home/anand/Desktop/Projects/HCG_
-project/HCG/IEEEtran/sup/part1_pngs-20.png>] [4 </home/anand/Desktop/Projects/H
-CG_project/HCG/IEEEtran/sup/part2_pngs-01.png> </home/anand/Desktop/Projects/HC
-G_project/HCG/IEEEtran/sup/part2_pngs-02.png> </home/anand/Desktop/Projects/HCG
-_project/HCG/IEEEtran/sup/part2_pngs-03.png> </home/anand/Desktop/Projects/HCG_
-project/HCG/IEEEtran/sup/part2_pngs-04.png> </home/anand/Desktop/Projects/HCG_p
-roject/HCG/IEEEtran/sup/part2_pngs-05.png> </home/anand/Desktop/Projects/HCG_pr
-oject/HCG/IEEEtran/sup/part2_pngs-06.png> </home/anand/Desktop/Projects/HCG_pro
-ject/HCG/IEEEtran/sup/part2_pngs-07.png> </home/anand/Desktop/Projects/HCG_proj
-ect/HCG/IEEEtran/sup/part2_pngs-08.png>] [5 </home/anand/Desktop/Projects/HCG_p
-roject/HCG/IEEEtran/sup/part2_pngs-09.png> </home/anand/Desktop/Projects/HCG_pr
-oject/HCG/IEEEtran/sup/part2_pngs-10.png> </home/anand/Desktop/Projects/HCG_pro
-ject/HCG/IEEEtran/sup/part2_pngs-11.png> </home/anand/Desktop/Projects/HCG_proj
-ect/HCG/IEEEtran/sup/part2_pngs-12.png> </home/anand/Desktop/Projects/HCG_proje
-ct/HCG/IEEEtran/sup/part2_pngs-13.png> </home/anand/Desktop/Projects/HCG_projec
-t/HCG/IEEEtran/sup/part2_pngs-14.png> </home/anand/Desktop/Projects/HCG_project
-/HCG/IEEEtran/sup/part2_pngs-15.png>] [6] [7 </home/anand/Desktop/Projects/HCG_
-project/HCG/IEEEtran/sup/binary.png>] [8 </home/anand/Desktop/Projects/HCG_proj
-ect/HCG/IEEEtran/sup/ternary.png>] (./LANCET_DIGIONCO_SUP.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./flowchart.png>]
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 136.
+<1-4.png, id=12, 2517.405pt x 1163.34625pt>
+File: 1-4.png Graphic file (type png)
+<use 1-4.png>
+Package pdftex.def Info: 1-4.png  used on input line 222.
+(pdftex.def)             Requested size: 398.33858pt x 184.08006pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 222--223
+ [][] 
+ []
+
+<5-8.png, id=13, 2531.4575pt x 1166.3575pt>
+File: 5-8.png Graphic file (type png)
+<use 5-8.png>
+Package pdftex.def Info: 5-8.png  used on input line 228.
+(pdftex.def)             Requested size: 398.33858pt x 183.5243pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 228--229
+ [][] 
+ []
+
+<9-12.png, id=14, 2516.40125pt x 1167.36125pt>
+File: 9-12.png Graphic file (type png)
+<use 9-12.png>
+Package pdftex.def Info: 9-12.png  used on input line 234.
+(pdftex.def)             Requested size: 398.33858pt x 184.78662pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 234--235
+ [][] 
+ []
+
+<13-16.png, id=15, 2533.465pt x 1166.3575pt>
+File: 13-16.png Graphic file (type png)
+<use 13-16.png>
+Package pdftex.def Info: 13-16.png  used on input line 240.
+(pdftex.def)             Requested size: 398.33858pt x 183.38193pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 240--241
+ [][] 
+ []
+
+<t_1-4.png, id=16, 2536.47626pt x 1161.33875pt>
+File: t_1-4.png Graphic file (type png)
+<use t_1-4.png>
+Package pdftex.def Info: t_1-4.png  used on input line 247.
+(pdftex.def)             Requested size: 398.33858pt x 182.3802pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 247--248
+ [][] 
+ []
+
+<t_5-8.png, id=17, 2572.61125pt x 1195.46625pt>
+File: t_5-8.png Graphic file (type png)
+<use t_5-8.png>
+Package pdftex.def Info: t_5-8.png  used on input line 253.
+(pdftex.def)             Requested size: 398.33858pt x 185.0947pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 253--254
+ [][] 
+ []
+
+<t_9-12.png, id=18, 2592.68625pt x 1208.515pt>
+File: t_9-12.png Graphic file (type png)
+<use t_9-12.png>
+Package pdftex.def Info: t_9-12.png  used on input line 259.
+(pdftex.def)             Requested size: 398.33858pt x 185.67668pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 259--260
+ [][] 
+ []
+
+<t_13-15.png, id=19, 2602.72375pt x 1246.6575pt>
+File: t_13-15.png Graphic file (type png)
+<use t_13-15.png>
+Package pdftex.def Info: t_13-15.png  used on input line 265.
+(pdftex.def)             Requested size: 398.33858pt x 190.79504pt.
+
+Overfull \hbox (14.33858pt too wide) in paragraph at lines 265--266
+ [][] 
+ []
+
+[2] [3 <./1-4.png>]
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 279.
+LaTeX Font Info:    Trying to load font information for OMS+txr on input line 2
+79.
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <8> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 279.
+No file LANCET_DIGIONCO_SUP.bbl.
+[4 <./5-8.png> <./9-12.png>] [5 <./13-16.png> <./t_1-4.png>] [6 <./t_5-8.png> <
+./t_9-12.png>] [7 <./t_13-15.png>] [8] [9] (./LANCET_DIGIONCO_SUP.aux) ) 
 Here is how much of TeX's memory you used:
- 5459 strings out of 481239
- 89520 string characters out of 5920376
- 486571 words of memory out of 5000000
- 20593 multiletter control sequences out of 15000+600000
- 559274 words of font info for 90 fonts, out of 8000000 for 9000
+ 6502 strings out of 481239
+ 97611 string characters out of 5920376
+ 492571 words of memory out of 5000000
+ 21638 multiletter control sequences out of 15000+600000
+ 573441 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,34p,1353b,280s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/tex
-live/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/font
-s/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on LANCET_DIGIONCO_SUP.pdf (8 pages, 2626251 bytes).
+ 41i,8n,42p,1579b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/s
+hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-d
+ist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on LANCET_DIGIONCO_SUP.pdf (9 pages, 592895 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
